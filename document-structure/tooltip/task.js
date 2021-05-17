@@ -29,19 +29,19 @@
       const tt = tooltip.element.getBoundingClientRect();
       switch (tooltip.element.dataset.position) {
         case 'top':
-          tooltip.element.style.top = el.top - tt.height + document.documentElement.scrollTop + 'px'
+          tooltip.element.style.top = el.top - tt.height + document.documentElement.scrollTop + 'px';
           tooltip.element.style.left = el.left + document.documentElement.scrollLeft + 'px';
           break;
         case 'left':
-          tooltip.element.style.top = el.top + document.documentElement.scrollTop + 'px'
-          tooltip.element.style.left = el.left - tt.width + document.documentElement.scrollLeft + 'px'
+          tooltip.element.style.top = el.top + document.documentElement.scrollTop + 'px';
+          tooltip.element.style.left = el.left - tt.width + document.documentElement.scrollLeft + 'px';
           break;
         case 'right':
-          tooltip.element.style.top = el.top + document.documentElement.scrollTop + 'px'
-          tooltip.element.style.left = el.right + document.documentElement.scrollLeft + 'px'
+          tooltip.element.style.top = el.top + document.documentElement.scrollTop + 'px';
+          tooltip.element.style.left = el.right + document.documentElement.scrollLeft + 'px';
           break;
         default:
-          tooltip.element.style.top = el.bottom + document.documentElement.scrollTop + 'px'
+          tooltip.element.style.top = el.bottom + document.documentElement.scrollTop + 'px';
           tooltip.element.style.left = el.left + document.documentElement.scrollLeft + 'px';
       }
     }
