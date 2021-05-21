@@ -35,3 +35,22 @@ body {
 .welcome_active {
   display: block;
 }
+
+.signin__error {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 10px;
+
+  background-color: #f06969;
+  border: 2px solid #c20404;
+  border-radius: 5px;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.logout:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
